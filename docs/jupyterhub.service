@@ -1,0 +1,12 @@
+[Unit]
+Description = JupyterHub daemon
+Wants = network-online.taget
+After = network-online.taget
+
+[Service]
+User = root
+ExecStart = jupyterhub /etc/jupyterhub/jupyterhub_config.py
+WorkingDirectory = /etc/jupyterhub/
+
+[Install]
+WantedBy = multi-user.target
