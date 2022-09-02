@@ -30,12 +30,13 @@ jupyterhub --generate-config
 - `c.JupyterHub.ip`
 
 	```
-	c.JupyterHub.ip = '192.168.1.160'
+	c.JupyterHub.ip = 'xx.xx.xx.xx'
 	```
 
 
 - `c.JupyterHub.port`
 
+	You can use any number from port number.
 	```
 	c.JupyterHub.port = 80
 	```
@@ -48,16 +49,6 @@ jupyterhub --generate-config
 - `c.JupyterHub.hub_port`
 
 	This is the port for spawner. Ordinaly it uses default (localhost)
-
-- `c.ConfigurableHTTPProxy.api_url`
-
-	(old name : 'proxy_api_ip')
-
-	This is the port for internal api. Ordinaly it uses default (localhost)
-
-	```
-	c.ConfigurableHTTPProxy.api_url = 'http://10.0.1.4:5432'
-	```
 
 ### User
 
