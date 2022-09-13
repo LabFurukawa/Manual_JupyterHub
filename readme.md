@@ -7,22 +7,22 @@ If you want to know more, search with "vscode markdown" or refer to official doc
 -->
 
 
-# Manual JupyterHub
+# JupyterHub Setup
 
-## About
+- [Install](./docs/01_install.md)
 
-Jupyter NotebookはPCのローカルにWebサーバーを立てそこにブラウザでアクセスできるようにしたいわばWebページである。
-この計算をするのはWebサーバー側であるがローカルにJupyter Notebook環境を立てたことにより計算能力は今使っているPCのスペックに依る。
-したがって当然、他のマシンにJupyter Notebook環境立てて、自分のPCからはブラウザを通したアクセスだけ、計算はサーバーにやらせるといった使い方が期待される。
+	JupyterHub周りのインストール
 
-Jupyter HubはJupyter Notebookをサーバーサイドに設置できるようにしてマルチユーザーアクセスに対応したものである。
+- [Setup JupyterHub config](./docs/02_config.md)
 
-## Index
+	JupyterHubのconfigファイル jupyterhub_config.py の設定
+- [Service](./docs/03_service.md)
 
-- [インストール](./docs/installing.md)
+	JupyterHubを計算機起動時に自動的に起動できるようServiceとして登録する。(Ubuntu)
 
-- [JupyterHubの設定](./docs/setting_item.md)
+- [Activate Julia](./docs/04_julia.md)
 
-- [JupyterHubの自動起動](./docs/jupyterhub_service.md)
+	JupyterHubにJulia環境を追加する。
+
 
 <!-- Written by Croyfet in 2022-->

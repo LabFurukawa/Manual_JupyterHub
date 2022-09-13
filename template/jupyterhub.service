@@ -1,7 +1,7 @@
 [Unit]
 Description = JupyterHub daemon
-Wants = network-online.taget
-After = network-online.taget
+Wants = network-online.target
+After = network-online.target
 
 [Service]
 User = root
